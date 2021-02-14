@@ -67,7 +67,11 @@ class _PerguntaAppState extends State<PerguntaApp> {
       backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         backgroundColor: Colors.grey,
-        title: Text('Perguntas'),
+        centerTitle: true,
+        title: Text(
+          'Perguntas',
+          style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+        ),
       ),
       body: temPerguntaSelecionada
           ? Questionario(
